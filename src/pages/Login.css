@@ -1,0 +1,114 @@
+.LoginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px; /* ensures spacing on small screens */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.LoginBox {
+  width: 100%;
+  max-width: 360px; /* prevent stretching on large screens */
+  padding: 35px 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+.LoginBox h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.LoginBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.LoginBox input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.LoginBox input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.LoginBox input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.LoginBox button {
+  padding: 14px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.LoginBox button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+.LoginBox p {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* 🌟 Responsive Styles */
+@media (max-width: 768px) {
+  .LoginBox {
+    padding: 25px 20px;
+  }
+
+  .LoginBox h2 {
+    font-size: 1.5rem;
+  }
+
+  .LoginBox input,
+  .LoginBox button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .LoginBox {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .LoginBox h2 {
+    font-size: 1.3rem;
+  }
+
+  .LoginBox input,
+  .LoginBox button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

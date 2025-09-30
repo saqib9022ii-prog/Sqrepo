@@ -1,0 +1,86 @@
+.NavContainer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px; /* stretch slightly on smaller screens */
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 14px;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+
+  flex-wrap: wrap; /* allow wrapping if space is small */
+}
+
+.NavContainer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 18px;
+}
+
+.NavContainer li {
+  margin: 0;
+}
+
+.NavContainer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* prevent text breaking weirdly */
+}
+
+.NavContainer a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #00f7ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 📱 Tablet screens */
+@media (max-width: 768px) {
+  .NavContainer {
+    justify-content: center;
+    padding: 12px 15px;
+  }
+
+  .NavContainer a {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+}
+
+/* 📱 Small phones */
+@media (max-width: 480px) {
+  .NavContainer {
+    flex-direction: column; /* stack items */
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .NavContainer ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .NavContainer a {
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}

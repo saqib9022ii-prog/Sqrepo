@@ -1,0 +1,51 @@
+body{
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.profile-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.profile-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.profile-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.profile-card strong {
+    font-weight: bold;
+}
+
+.error {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loading {
+    color: #cccccc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+

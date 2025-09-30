@@ -1,0 +1,38 @@
+.HomeContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* same gradient background as login/register */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.HomeBox {
+  padding: 40px 50px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.1); /* glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  max-width: 600px;
+}
+
+.HomeBox h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.HomeBox p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+}

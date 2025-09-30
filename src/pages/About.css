@@ -1,0 +1,39 @@
+.AboutContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* match login/register/home gradient */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.AboutBox {
+  padding: 40px 50px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.1); /* glassy look */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  max-width: 700px;
+}
+
+.AboutBox h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.AboutBox p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
